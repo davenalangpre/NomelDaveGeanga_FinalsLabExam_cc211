@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptiView Eyewear | Modern Prescription Glasses & Frames</title>
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation -->
+  <header class="sticky-top bg-white border-bottom shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Primary Navigation">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary-dark"
+          href="#home"
+          data-nav-target="home"
+        >
+          <span class="brand-icon d-inline-flex align-items-center justify-content-center rounded-3">
+            <i class="bi bi-eyeglasses fs-4 text-white" aria-hidden="true"></i>
+          </span>
+          <span>OptiView <span class="text-accent">Eyewear</span></span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button
+            type="button"
+            class="btn btn-outline-dark position-relative rounded-pill px-3 py-2 d-flex align-items-center gap-2"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#cartOffcanvas"
+            aria-controls="cartOffcanvas"
+            aria-label="Open shopping cart"
+          >
+            <i class="bi bi-bag" aria-hidden="true"></i>
+            <span class="d-none d-sm-inline fw-semibold">Cart</span>
+            <span
+              id="cartBadge"
+              class="badge rounded-pill bg-accent text-white"
+              aria-live="polite"
+            >0</span>
+          </button>
+
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primaryNavbar"
+            aria-controls="primaryNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-lg-2" id="primaryNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-semibold px-3 rounded-pill"
+                href="#home"
+                data-nav-target="home"
+                aria-current="page"
+              >Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold px-3 rounded-pill"
+                href="#catalog"
+                data-nav-target="catalog"
+              >Eyewear Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-semibold px-3 rounded-pill"
+                href="#tryon-checkout"
+                data-nav-target="tryon-checkout"
+              >Virtual Try-On &amp; Checkout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" tabindex="-1">
+    <!-- SECTION 1: HOME -->
+    <section id="home" class="page-section active-section" aria-labelledby="home-heading">
+      <div class="hero-banner py-5 py-lg-6">
+        <div class="container py-lg-4">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <span class="badge bg-accent-soft text-accent fw-semibold px-3 py-2 rounded-pill mb-3">
+                Precision Optics &bull; Handcrafted Frames
+              </span>
+              <h1 id="home-heading" class="display-4 fw-extrabold text-primary-dark mb-3">
+                See the World With Unmatched Clarity &amp; Style.
+              </h1>
+              <p class="lead text-secondary mb-4">
+                Architectural acetate and featherlight titanium frames tailored to your exact prescription.
+                Preview styles live and order seamlessly from any device.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <button
+                  type="button"
+                  class="btn btn-primary-custom btn-lg px-4 rounded-pill fw-semibold"
+                  data-nav-target="catalog"
+                >
+                  Explore Eyewear Catalog <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-dark btn-lg px-4 rounded-pill fw-semibold"
+                  data-nav-target="tryon-checkout"
+                >
+                  Virtual Try-On &amp; Checkout
+                </button>
+              </div>
+              <div class="row g-3 mt-4 pt-3 border-top">
+                <div class="col-4">
+                  <div class="fw-bold fs-4 text-primary-dark">100%</div>
+                  <div class="small text-secondary">UV400 &amp; Anti-Glare</div>
+                </div>
+                <div class="col-4">
+                  <div class="fw-bold fs-4 text-primary-dark">30-Day</div>
+                  <div class="small text-secondary">Risk-Free Trial</div>
+                </div>
+                <div class="col-4">
+                  <div class="fw-bold fs-4 text-primary-dark">4.9/5</div>
+                  <div class="small text-secondary">Customer Rating</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero-visual-card p-4 p-md-5 rounded-4 shadow-lg bg-white position-relative">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="badge bg-dark text-white rounded-pill px-3 py-2">Featured Silhouette</span>
+                  <span class="text-accent fw-bold">$145.00</span>
+                </div>
+                <div class="featured-svg-stage rounded-4 p-4 my-3 d-flex align-items-center justify-content-center">
+                  <svg
+                    viewBox="0 0 360 130"
+                    class="w-100"
+                    style="max-width: 320px;"
+                    role="img"
+                    aria-label="Illustration of classic tortoiseshell round eyeglasses"
+                  >
+                    <defs>
+                      <linearGradient id="lensGradHero" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#e0f2fe" stop-opacity="0.75" />
+                        <stop offset="100%" stop-color="#bae6fd" stop-opacity="0.35" />
+                      </linearGradient>
+                    </defs>
+                    <!-- Left Lens & Rim -->
+                    <circle cx="105" cy="65" r="46" fill="url(#lensGradHero)" stroke="#1e293b" stroke-width="9" />
+                    <!-- Right Lens & Rim -->
+                    <circle cx="255" cy="65" r="46" fill="url(#lensGradHero)" stroke="#1e293b" stroke-width="9" />
+                    <!-- Bridge -->
+                    <path d="M151 58 Q180 42 209 58" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round" />
+                    <!-- Temples -->
+                    <path d="M59 55 L22 48" stroke="#1e293b" stroke-width="7" stroke-linecap="round" />
+                    <path d="M301 55 L338 48" stroke="#1e293b" stroke-width="7" stroke-linecap="round" />
+                    <!-- Glare highlight -->
+                    <path d="M78 44 L96 34" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+                    <path d="M228 44 L246 34" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <div>
+                    <h2 class="h5 fw-bold mb-1 text-primary-dark">The Lumina Round</h2>
+                    <p class="small text-secondary mb-0">Hand-polished Italian acetate &bull; Blue-light ready</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-accent rounded-pill px-3 fw-semibold"
+                    data-nav-target="catalog"
+                  >
+                    Shop Collection
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Value Propositions -->
+      <div class="container py-5">
+        <div class="text-center max-w-600 mx-auto mb-5">
+          <h2 class="fw-bold text-primary-dark">Why Choose OptiView Eyewear?</h2>
+          <p class="text-secondary">
+            Designed by opticians and industrial designers for all-day comfort and optical accuracy.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card h-100 border-0 shadow-sm rounded-4 p-4">
+              <div class="feature-icon rounded-3 mb-3 d-inline-flex align-items-center justify-content-center">
+                <i class="bi bi-layers fs-4 text-accent" aria-hidden="true"></i>
+              </div>
+              <h3 class="h5 fw-bold text-primary-dark">High-Index Digital Lenses</h3>
+              <p class="text-secondary mb-0">
+                Ultra-thin, scratch-resistant polycarbonate lenses crafted with anti-reflective and hydrophobic coatings included.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100 border-0 shadow-sm rounded-4 p-4">
+              <div class="feature-icon rounded-3 mb-3 d-inline-flex align-items-center justify-content-center">
+                <i class="bi bi-camera fs-4 text-accent" aria-hidden="true"></i>
+              </div>
+              <h3 class="h5 fw-bold text-primary-dark">Interactive Frame Fit Studio</h3>
+              <p class="text-secondary mb-0">
+                Test frame silhouettes, bridge widths, and lens tints interactively before entering your prescription.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100 border-0 shadow-sm rounded-4 p-4">
+              <div class="feature-icon rounded-3 mb-3 d-inline-flex align-items-center justify-content-center">
+                <i class="bi bi-shield-check fs-4 text-accent" aria-hidden="true"></i>
+              </div>
+              <h3 class="h5 fw-bold text-primary-dark">2-Year Frame &amp; Lens Warranty</h3>
+              <p class="text-secondary mb-0">
+                Every pair includes complimentary nose-pad adjustments, a hardshell vegan leather case, and microfiber cloth.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: EYEWEAR CATALOG -->
+    <section id="catalog" class="page-section py-5" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+          <div>
+            <span class="text-accent fw-semibold small text-uppercase tracking-wider">Curated Collection</span>
+            <h1 id="catalog-heading" class="h2 fw-bold text-primary-dark mb-1">Eyewear Catalog</h1>
+            <p class="text-secondary mb-0">Filter by frame silhouette or search by model name, material, or color.</p>
+          </div>
+          <div class="text-md-end">
+            <span id="catalogCount" class="badge bg-light text-dark border px-3 py-2 rounded-pill fw-semibold" aria-live="polite">
+              Showing 8 frames
+            </span>
+          </div>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="card border-0 shadow-sm rounded-4 p-3 p-md-4 mb-4 bg-white">
+          <div class="row g-3 align-items-center">
+            <div class="col-lg-5">
+              <label for="frameSearchInput" class="form-label fw-semibold small text-secondary mb-1">
+                Search Frames
+              </label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0">
+                  <i class="bi bi-search text-secondary" aria-hidden="true"></i>
+                </span>
+                <input
+                  type="search"
+                  id="frameSearchInput"
+                  class="form-control border-start-0 bg-light"
+                  placeholder="Search by name, color, or material..."
+                  aria-label="Search eyewear frames by name, color, or material"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <span id="styleFilterLabel" class="form-label fw-semibold small text-secondary d-block mb-1">
+                Filter by Frame Style
+              </span>
+              <div
+                class="d-flex flex-wrap gap-2"
+                role="group"
+                aria-labelledby="styleFilterLabel"
+                id="styleFilterButtons"
+              >
+                <button type="button" class="btn btn-sm btn-filter active rounded-pill px-3" data-style="All" aria-pressed="true">
+                  All Styles
+                </button>
+                <button type="button" class="btn btn-sm btn-filter rounded-pill px-3" data-style="Round" aria-pressed="false">
+                  Round
+                </button>
+                <button type="button" class="btn btn-sm btn-filter rounded-pill px-3" data-style="Rectangle" aria-pressed="false">
+                  Rectangle
+                </button>
+                <button type="button" class="btn btn-sm btn-filter rounded-pill px-3" data-style="Aviator" aria-pressed="false">
+                  Aviator
+                </button>
+                <button type="button" class="btn btn-sm btn-filter rounded-pill px-3" data-style="Cat-Eye" aria-pressed="false">
+                  Cat-Eye
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="catalogGrid" class="row g-4" aria-live="polite"></div>
+
+        <!-- Empty State -->
+        <div id="emptyCatalogState" class="text-center py-5 d-none">
+          <i class="bi bi-eyeglasses display-4 text-secondary mb-3 d-block" aria-hidden="true"></i>
+          <h2 class="h4 fw-bold text-primary-dark">No matching frames found</h2>
+          <p class="text-secondary">Try adjusting your search keywords or resetting the frame style filter.</p>
+          <button type="button" id="resetFiltersBtn" class="btn btn-primary-custom rounded-pill px-4">
+            Reset Filters
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: VIRTUAL TRY-ON & CHECKOUT -->
+    <section id="tryon-checkout" class="page-section py-5" aria-labelledby="tryon-heading">
+      <div class="container">
+        <div class="mb-4">
+          <span class="text-accent fw-semibold small text-uppercase">Fit Studio &amp; Order</span>
+          <h1 id="tryon-heading" class="h2 fw-bold text-primary-dark mb-1">Virtual Try-On &amp; Prescription Checkout</h1>
+          <p class="text-secondary mb-0">
+            Preview your selected frame silhouette on our interactive fit model, then enter your prescription details to complete your order.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <!-- Virtual Try-On Interactive Preview -->
+          <div class="col-lg-5">
+            <div class="card border-0 shadow-sm rounded-4 p-4 bg-white">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="h5 fw-bold text-primary-dark mb-0">
+                  <i class="bi bi-person-bounding-box text-accent me-2" aria-hidden="true"></i>Virtual Fit Preview
+                </h2>
+                <span id="tryOnStyleBadge" class="badge bg-accent-soft text-accent rounded-pill px-3">Round</span>
+              </div>
+
+              <!-- Interactive SVG Face + Frame Overlay -->
+              <div class="tryon-stage rounded-4 p-3 mb-3 text-center position-relative">
+                <svg
+                  id="virtualTryOnSvg"
+                  viewBox="0 0 320 300"
+                  class="w-100"
+                  style="max-width: 290px;"
+                  role="img"
+                  aria-label="Virtual try-on preview showing selected eyeglasses style on a stylized model"
+                >
+                  <!-- Background -->
+                  <rect width="320" height="300" rx="20" fill="#f1f5f9" />
+                  <!-- Shoulders -->
+                  <path d="M55 300 C65 245, 255 245, 265 300 Z" fill="#1e293b" />
+                  <!-- Neck -->
+                  <rect x="136" y="205" width="48" height="55" rx="14" fill="#eab696" />
+                  <!-- Face -->
+                  <path d="M92 115 C92 55, 228 55, 228 115 C228 188, 198 225, 160 225 C122 225, 92 188, 92 115 Z" fill="#f5c6a5" />
+                  <!-- Hair -->
+                  <path d="M88 122 C82 52, 238 52, 232 122 C226 84, 195 74, 160 74 C125 74, 94 84, 88 122 Z" fill="#1e293b" />
+                  <!-- Eyebrows -->
+                  <path d="M110 112 Q128 104 146 111" fill="none" stroke="#334155" stroke-width="3.5" stroke-linecap="round" />
+                  <path d="M174 111 Q192 104 210 112" fill="none" stroke="#334155" stroke-width="3.5" stroke-linecap="round" />
+                  <!-- Eyes -->
+                  <circle cx="128" cy="130" r="4.5" fill="#0f172a" />
+                  <circle cx="192" cy="130" r="4.5" fill="#0f172a" />
+                  <!-- Nose -->
+                  <path d="M160 128 L155 158 L166 160" fill="none" stroke="#c98e6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <!-- Mouth -->
+                  <path d="M142 185 Q160 196 178 185" fill="none" stroke="#b56558" stroke-width="3.5" stroke-linecap="round" />
+                  <!-- Dynamic Glasses Layer -->
+                  <g id="tryOnGlassesLayer"></g>
+                </svg>
+              </div>
+
+              <div class="mb-3">
+                <label for="tryOnFrameSelect" class="form-label fw-semibold small text-secondary">
+                  Select Frame to Preview
+                </label>
+                <select id="tryOnFrameSelect" class="form-select rounded-3" aria-label="Select frame to preview in Virtual Try-On">
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <span id="lensTintLabel" class="form-label fw-semibold small text-secondary d-block">
+                  Lens Tint Option
+                </span>
+                <div class="btn-group w-100" role="group" aria-labelledby="lensTintLabel">
+                  <input type="radio" class="btn-check" name="lensTint" id="tintClear" value="clear" checked />
+                  <label class="btn btn-outline-secondary btn-sm" for="tintClear">Clear</label>
+
+                  <input type="radio" class="btn-check" name="lensTint" id="tintBlue" value="blue" />
+                  <label class="btn btn-outline-secondary btn-sm" for="tintBlue">Blue-Light</label>
+
+                  <input type="radio" class="btn-check" name="lensTint" id="tintSun" value="sun" />
+                  <label class="btn btn-outline-secondary btn-sm" for="tintSun">Sun Tint</label>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                <div>
+                  <div id="tryOnFrameName" class="fw-bold text-primary-dark">Lumina Round</div>
+                  <div id="tryOnFramePrice" class="small text-accent fw-semibold">$145.00</div>
+                </div>
+                <button type="button" id="tryOnAddToCartBtn" class="btn btn-primary-custom rounded-pill px-4 fw-semibold">
+                  <i class="bi bi-bag-plus me-1" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Validated Prescription & Order Checkout Form -->
+          <div class="col-lg-7">
+            <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+              <h2 class="h4 fw-bold text-primary-dark mb-1">Prescription &amp; Checkout Details</h2>
+              <p class="text-secondary small mb-4">
+                All fields marked with <span class="text-danger">*</span> are required. Your cart items will be paired with this prescription.
+              </p>
+
+              <!-- Order Summary Pill Banner -->
+              <div class="alert alert-light border d-flex flex-wrap justify-content-between align-items-center gap-2 rounded-3 mb-4" role="status">
+                <div>
+                  <span class="fw-semibold text-primary-dark">Order Summary:</span>
+                  <span id="checkoutCartSummary" class="text-secondary ms-1">0 items ($0.00)</span>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-dark rounded-pill"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#cartOffcanvas"
+                >
+                  Review Cart
+                </button>
+              </div>
+
+              <!-- Feedback Alert Container -->
+              <div id="checkoutFeedback" class="d-none mb-4" role="alert" aria-live="assertive"></div>
+
+              <form id="checkoutForm" novalidate>
+                <!-- Step 1: Customer Contact -->
+                <h3 class="h6 text-uppercase fw-bold text-accent mb-3">1. Customer &amp; Shipping Information</h3>
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label for="customerName" class="form-label fw-semibold">
+                      Full Name <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="customerName"
+                      name="customerName"
+                      placeholder="Alex Morgan"
+                      required
+                      minlength="2"
+                    />
+                    <div class="invalid-feedback">Please enter your full name (at least 2 characters).</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="customerEmail" class="form-label fw-semibold">
+                      Email Address <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="customerEmail"
+                      name="customerEmail"
+                      placeholder="alex.morgan@example.com"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="shippingAddress" class="form-label fw-semibold">
+                      Shipping Street Address <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="shippingAddress"
+                      name="shippingAddress"
+                      placeholder="742 Evergreen Terrace, Apt 4B"
+                      required
+                      minlength="5"
+                    />
+                    <div class="invalid-feedback">Please enter a complete street address.</div>
+                  </div>
+
+                  <div class="col-md-7">
+                    <label for="shippingCity" class="form-label fw-semibold">
+                      City &amp; State <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="shippingCity"
+                      name="shippingCity"
+                      placeholder="San Francisco, CA"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter your city and state.</div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="shippingZip" class="form-label fw-semibold">
+                      Postal / ZIP Code <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="shippingZip"
+                      name="shippingZip"
+                      placeholder="94107"
+                      pattern="^[0-9A-Za-z\s-]{4,10}$"
+                      required
+                    />
+                    <div class="invalid-feedback">Please enter a valid 4–10 character postal code.</div>
+                  </div>
+                </div>
+
+                <!-- Step 2: Optical Prescription -->
+                <h3 class="h6 text-uppercase fw-bold text-accent mb-3">2. Optical Prescription (Rx)</h3>
+                <div class="row g-3 mb-4">
+                  <div class="col-md-4">
+                    <label for="rxType" class="form-label fw-semibold">
+                      Vision Type <span class="text-danger">*</span>
+                    </label>
+                    <select id="rxType" name="rxType" class="form-select" required>
+                      <option value="">Choose vision type...</option>
+                      <option value="Single Vision">Single Vision</option>
+                      <option value="Progressive">Progressive</option>
+                      <option value="Non-Prescription">Non-Prescription (Plano)</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a vision type.</div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="odSphere" class="form-label fw-semibold">
+                      Right Eye (OD) SPH <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      step="0.25"
+                      min="-12.00"
+                      max="12.00"
+                      class="form-control"
+                      id="odSphere"
+                      name="odSphere"
+                      placeholder="-1.50"
+                      required
+                    />
+                    <div class="invalid-feedback">Enter a value between -12.00 and +12.00 (0.25 steps).</div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <label for="osSphere" class="form-label fw-semibold">
+                      Left Eye (OS) SPH <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      step="0.25"
+                      min="-12.00"
+                      max="12.00"
+                      class="form-control"
+                      id="osSphere"
+                      name="osSphere"
+                      placeholder="-1.75"
+                      required
+                    />
+                    <div class="invalid-feedback">Enter a value between -12.00 and +12.00 (0.25 steps).</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="pdMeasurement" class="form-label fw-semibold">
+                      Pupillary Distance (PD in mm) <span class="text-danger">*</span>
+                    </label>
+                    <input
+                      type="number"
+                      min="50"
+                      max="78"
+                      step="0.5"
+                      class="form-control"
+                      id="pdMeasurement"
+                      name="pdMeasurement"
+                      placeholder="63"
+                      required
+                    />
+                    <div class="invalid-feedback">PD must be between 50 mm and 78 mm.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="lensPackage" class="form-label fw-semibold">
+                      Lens Coating Package
+                    </label>
+                    <select id="lensPackage" name="lensPackage" class="form-select">
+                      <option value="Standard Anti-Glare (Included)">Standard Anti-Glare (Included)</option>
+                      <option value="Blue-Light Defense (+$0 Promo)">Blue-Light Defense (+$0 Promo)</option>
+                      <option value="Ultra-Thin 1.67 High-Index">Ultra-Thin 1.67 High-Index</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="rxConfirmCheck"
+                    required
+                  />
+                  <label class="form-check-label small text-secondary" for="rxConfirmCheck">
+                    I confirm that my prescription values match a valid optometrist prescription within the past 2 years. <span class="text-danger">*</span>
+                  </label>
+                  <div class="invalid-feedback">You must confirm your prescription accuracy before placing an order.</div>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary-custom btn-lg rounded-pill fw-bold">
+                    Complete Eyewear Order <i class="bi bi-check2-circle ms-2" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Cart Offcanvas Drawer -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="cartOffcanvas"
+    aria-labelledby="cartOffcanvasLabel"
+  >
+    <div class="offcanvas-header border-bottom">
+      <h2 class="offcanvas-title h5 fw-bold text-primary-dark" id="cartOffcanvasLabel">
+        <i class="bi bi-bag me-2 text-accent" aria-hidden="true"></i>Your Eyewear Bag
+      </h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close shopping cart"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cartItemsContainer" class="flex-grow-1 overflow-auto pe-1"></div>
+
+      <div id="cartFooter" class="border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span class="text-secondary">Standard Lenses &amp; Case</span>
+          <span class="text-success fw-semibold">FREE</span>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <span class="fw-bold fs-5 text-primary-dark">Estimated Total</span>
+          <span id="cartSubtotal" class="fw-bold fs-5 text-primary-dark">$0.00</span>
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            type="button"
+            id="proceedToCheckoutBtn"
+            class="btn btn-primary-custom rounded-pill fw-semibold py-2"
+            data-bs-dismiss="offcanvas"
+          >
+            Proceed to Prescription &amp; Checkout
+          </button>
+          <button
+            type="button"
+            id="clearCartBtn"
+            class="btn btn-outline-secondary btn-sm rounded-pill"
+          >
+            Clear Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Cart Feedback -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+    <div
+      id="cartToast"
+      class="toast align-items-center text-bg-dark border-0 rounded-3 shadow"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      <div class="d-flex">
+        <div id="cartToastMessage" class="toast-body fw-medium">
+          Item added to your cart.
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close notification"
+        ></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-white py-5 mt-auto">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center gap-2 fw-bold fs-5 mb-2">
+            <i class="bi bi-eyeglasses text-accent fs-4" aria-hidden="true"></i>
+            <span>OptiView Eyewear</span>
+          </div>
+          <p class="text-white-50 small mb-0">
+            Modern prescription eyewear crafted for clarity, durability, and effortless digital shopping.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#home" data-nav-target="home" class="text-white-50 text-decoration-none small">Home</a>
+            </li>
+            <li class="list-inline-item mx-3">
+              <a href="#catalog" data-nav-target="catalog" class="text-white-50 text-decoration-none small">Catalog</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#tryon-checkout" data-nav-target="tryon-checkout" class="text-white-50 text-decoration-none small">Virtual Try-On &amp; Checkout</a>
+            </li>
+          </ul>
+          <p class="text-white-50 small mb-0">&copy; 2026 OptiView Eyewear Studio. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Custom Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
